@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(hsl(214, 47%, 23%),hsl(237, 49%, 15%));
+  background-repeat: no-repeat, repeat, repeat;
+  justify-content: center;
+}
+
+header {
+	display: flex;
+	width: 311px;
+	margin: auto;
+	margin-top: 32px;
+	padding: 12px;
+	border: solid hsl(217, 16%, 45%) 3px;
+	border-radius: 15px;
+	justify-content: space-between;
+	align-items: center;
+
+	#score {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
+		height: 72px;
+		width: 80px;
+		border-radius: 1em;
+		
+		h2 {
+			margin: 0;
+			color: hsl(229, 64%, 46%);
+			font-weight: 600;
+			font-size: 10px;
+			text-transform: uppercase;
+		}
+
+		p {
+			margin: 0;
+			color: hsl(229, 25%, 31%);
+			font-size: 40px;
+			font-weight: 700;
+		}
+	}
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	width: 311px;
+	margin: auto;
+	justify-content: space-evenly;
+	background-image: url(./bg-triangle.svg);
+	background-position: center;
+	background-repeat: no-repeat, repeat, repeat;
+}
+
+
+@media (min-width: 1366px){
+	header {
+		width: 700px;
+		margin-top: 48px;
+		padding: 18px;
+
+		#score {
+			height: 114px;
+			width: 150px;
+	
+			h2 {
+				font-size: 16px;
+			}
+
+			p {
+				font-size: 64px;	
+			}
+		}
+	}
+
+	main {
+		width: 700px;
+
+		&.step-two {
+			width: 1000px;
+			background: none;
+		}
+	}
+}

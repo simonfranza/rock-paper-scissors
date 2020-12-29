@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PickOption from './PickOption';
 
-const Pick = ({ onPick }) => {
+const StepOne = ({ onPick }) => {
 	const options = ['rock', 'paper', 'scissors'].map((option) => 
 		<PickOption option={option} onPick={onPick} />
 	);
@@ -14,8 +14,8 @@ const Pick = ({ onPick }) => {
 	);
 }
 
-Pick.propTypes = {
+StepOne.propTypes = {
 	onPick: PropTypes.func.isRequired,
 }
 
-export default Pick;
+export default StepOne;

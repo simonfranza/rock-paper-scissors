@@ -1,0 +1,14 @@
+@import './common.scss';
+
+main {
+	background: none;
+}
+
+@media (min-width: 1366px){
+	main {
+		&.step-two {
+			width: 1000px;
+			background: none;
+		}
+	}
+}
